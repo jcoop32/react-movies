@@ -6,6 +6,7 @@ import MovieListPage from '../MovieListPage/MovieListPage';
 import MovieDetailPage from '../MovieDetailPage/MovieDetailPage';
 import ActorListPage from '../ActorListPage/ActorListPage';
 import NavBar from '../../Components/NavBar/NavBar';
+import {movies} from '../../data'
 
 export default function App() {
   const [user, setUser] = useState(null);
@@ -22,7 +23,7 @@ export default function App() {
           <NavBar user={user} />
           <Routes>
             {/* Route components in here */}
-            <Route path="/" element={<MovieListPage />} />
+            <Route path="/" element={<MovieListPage movies={movies}/>} />
             <Route path="/movies/:movieName" element={<MovieDetailPage />} />
             <Route path="/actors" element={<ActorListPage />} />
           </Routes>
