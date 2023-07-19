@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import './MovieListPage.css';
-import MovieCard from '../../Components/NavBar/MovieCard';
-
+import MovieCard from '../../Components/MovieCard/MovieCard';
 export default function MovieListPage({ movies }) {
   const movieItem = movies.map((m, idx) => (
     <MovieCard movie={m} key={idx} index={idx} />
