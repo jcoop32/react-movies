@@ -7,5 +7,5 @@ export default function MovieListPage({ movies }) {
     <MovieCard movie={m} key={idx} index={idx} />
   ));
 
-  return <div class="row container">{movieItem}</div>;
+  return <div className="row container">{movieItem}</div>;
 }
