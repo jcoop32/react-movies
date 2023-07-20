@@ -9,7 +9,7 @@ import NavBar from '../../Components/NavBar/NavBar';
 import { movies } from '../../data';
 
 export default function App() {
-  const [user, setUser] = useState(1);
+  const [user, setUser] = useState(null);
 
   //get user from login page
   function addNewUser(username) {

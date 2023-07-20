@@ -12,7 +12,7 @@ export default function LoginPage({ addNewUser }) {
   return (
     <>
       <h1 className="LoginPage">LoginPage</h1>
-      <form onSubmit={handleLogin}>
+      <form onSubmit={handleLogin} className="container">
         <input
           name="username"
           placeholder="Username"
