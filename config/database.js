@@ -1,8 +1,6 @@
 const mongoose = require('mongoose');
 
-mongoose.connect(
-  'mongodb+srv://jcoop32:8YGY0V4RsqjDGRI3@cluster0.5qrhgfd.mongodb.net/react-movies?retryWrites=true&w=majority',
-);
+mongoose.connect(process.env.DATABASE_URL);
 
 const db = mongoose.connection;
 
