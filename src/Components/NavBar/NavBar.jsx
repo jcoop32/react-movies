@@ -5,8 +5,6 @@ export default function NavBar({ user }) {
     <nav>
       <Link to="/">Moive List</Link>
       &nbsp; | &nbsp;
-      <Link to="/movies/:movieName">Movie Name</Link>
-      &nbsp; | &nbsp;
       <Link to="/actors">Actor List</Link>
       <p>Hello, {user}</p>
     </nav>
